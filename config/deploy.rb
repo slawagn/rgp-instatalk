@@ -42,7 +42,7 @@ set :repo_url, "git@example.com:me/my_repo.git"
 set :application, 'rgp-instatalk'
 # Это url вашего репозитория, откуда Capistrano
 # будет брать свежие версии исходников
-set :repo_url, 'git@bitbucket.org:aristofun/tubilinkz.git'
+set :repo_url, 'https://github.com/slawagn/rgp-instatalk.git'
 
 # Папка, где будет храниться приложение
 set :deploy_to, '/home/deploy/apps/tubilinkz'
