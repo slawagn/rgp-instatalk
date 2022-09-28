@@ -45,7 +45,7 @@ set :application, 'rgp-instatalk'
 set :repo_url, 'https://github.com/slawagn/rgp-instatalk.git'
 
 # Папка, где будет храниться приложение
-set :deploy_to, '/home/deploy/apps/tubilinkz'
+set :deploy_to, '/home/deploy/apps/rgp-instatalk'
 
 # Файлы, которые лежат вне репозитория
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads'
