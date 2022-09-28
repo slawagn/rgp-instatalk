@@ -49,3 +49,5 @@ set :deploy_to, '/home/deploy/apps/tubilinkz'
 
 # Файлы, которые лежат вне репозитория
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads'
+
+set :rbenv_prefix, '/usr/bin/rbenv exec'
