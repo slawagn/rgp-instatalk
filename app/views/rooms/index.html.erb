@@ -1,11 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Rooms</h1>
 
-<ul class="mt-4 list-unstyled">
-  <%= render @rooms %>
-</ul>
+<div class="row mt-4">
+  <div class="col-8">
+    <h1>Rooms</h1>
 
-<div class="mt-2">
-  <%= render 'rooms/form', room: @room %>
+    <ul class="list-unstyled">
+      <%= render @rooms %>
+    </ul>
+
+    <div class="mt-2">
+      <%= render 'rooms/form', room: @room %>
+    </div>
+  </div>
+  <div class="col-4">
+    <h2>Users online</h2>
+
+    <ul class="list-unstyled">
+      <%= render @users %>
+    </ul>
+  </div>
 </div>
+
