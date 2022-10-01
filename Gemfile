@@ -63,3 +63,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
+# Added at 2022-10-01 08:52:09 +0000 by code:
+gem "dotenv-rails", "~> 2.8"
