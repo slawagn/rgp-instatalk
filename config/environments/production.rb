@@ -41,10 +41,10 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
-  config.action_cable.url = 'wss://instatalk.rgp.slawagn.xyz/cable'
+  config.action_cable.url = 'wss://rgp.slawagn.xyz:81/cable'
   config.action_cable.allowed_request_origins = [
-    'http://instatalk.rgp.slawagn.xyz/cable',
-    'https://instatalk.rgp.slawagn.xyz/cable'
+    'http://rgp.slawagn.xyz:81/cable',
+    'https://rgp.slawagn.xyz:81/cable'
   ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
@@ -61,8 +61,8 @@ Rails.application.configure do
   # config.cache_store = :mem_cache_store
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
-  # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "instatalk_#{Rails.env}"
+  config.active_job.queue_adapter     = :resque
+  config.active_job.queue_name_prefix = "instatalk_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.

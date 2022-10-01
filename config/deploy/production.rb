@@ -60,4 +60,7 @@
 #     # password: "please use keys"
 #   }
 
-server 'instatalk.rgp.slawagn.xyz', user: 'deploy', roles: %w{app db web}
+server 'rgp.slawagn.xyz', user: 'deploy', roles: %w{app db web resque_worker}
+
+set :resque_environment_task, true
+set :workers, { "instatalk*" => 1 }
