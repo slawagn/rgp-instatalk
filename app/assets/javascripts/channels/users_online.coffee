@@ -11,6 +11,10 @@ App.users_online = App.cable.subscriptions.create "UsersOnlineChannel",
     # Called when there's incoming data on the websocket for this channel
     console.log('Received action: ' + data['action'])
 
-    $('#users_online').append data['content'] if data['action'] == 'append'
+    if data['action'] == 'append'
+      received_id = $(data['content'])[0].id
+      if $('#' + received_id).length == 0
+        $('#users_online').append $(data['content'])
     
-    $(data['id']).remove() if data['action'] == 'remove'
+    if data['action'] == 'remove'
+      $(data['id']).remove()
